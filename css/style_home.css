@@ -20,7 +20,7 @@ img{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 70px;
     margin-bottom: 5%;
 }
 
@@ -29,6 +29,14 @@ h2{
     font-size: 35px;
     
 }
+
+.intro h1{
+    font-family: Inter;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
 
 .intro p{
     font-size: 30px;
@@ -339,7 +347,7 @@ aside img{
     place-content: center;
     background-color: var(--background-color);
     min-height: 10vh;
-    font-family: "Oswald", sans-serif;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: clamp(1rem, 1rem + 15vw, 10rem);
     font-weight: 700;
     text-transform: uppercase;
@@ -476,6 +484,8 @@ aside img{
         font-size: 20px;
     }
 
+
+
     h2{
         font-size: 30px;
         margin-bottom: 30px;
@@ -485,6 +495,19 @@ aside img{
         font-size: 10px;
     }
 
+    .intro h1{
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        }
+    
+
+
+    .intro p{
+        font-size: 25px;
+    }
 
     .intro{
         padding: 10%;
@@ -543,7 +566,7 @@ aside img{
 
 
 /* tablet size */
-@media only screen and (min-width: 768px) and (max-width:1024px){
+@media only screen and (min-width: 768px) and (max-width:1050px){
 
     .intro article{
         width: 75%;
@@ -561,6 +584,16 @@ aside img{
     h1{
         font-size: 40px;
     }
+
+    .intro h1{
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        }
+    
+
 
     .intro p{
         font-size: 25px;
