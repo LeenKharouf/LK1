@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- Declare HTML doctype for file -->
+<html lang="en">
+    <head>
+        <!-- Character set sttribute specifies character encoding.
+        Failure to state this may result in malformed font characters -->
+        <meta charset="utf-8" />
+        <!-- Viewport metatag is required for proper responsive rendering -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Title tag is the first thing you see as google search result and the title in the broswer tab -->
+        <title>Leen Kharouf</title>
+        <link rel="icon" type="image/x-icon" href="../img/LK_logo.jpg">
+        <link href="../css/style_home.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <!-- icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+    
+         <!-- UIkit CSS -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/css/uikit.min.css" />
+
+         <!-- UIkit JS -->
+         <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit-icons.min.js"></script>
+ 
+
+        <style>
+            .thumb{
+                flex-basis: 30%;
+            }
+
+            .mask{
+                font-size: 15px;
+            }
+
+            .thumb img{
+                /* needs a start and end value. This is the start*/
+                transform: scale(1);
+                transform: rotate(0deg);
+                /* anything that changes */
+                transition: all 1s ease;
+            }
+
+            .thumb:hover img{
+                transform: scale(1) rotate(0);
+            }
+
+            main{
+                padding: 10%;
+            }
+
+        </style>
+        <script>
+            function toggleMenu(){
+              // 
+              const element = document.getElementById('menu');
+              // if it already has class open, remove it, if not, add it
+              element.classList.toggle('open');
+            }
+      
+          </script>
+
+    </head>
+
+    <body>
+        <header>
+            <a href="../home/home.html">
+                <img src="../img/LK_logo.png" alt="logo">
+              </a> 
+            
+            <!-- this is the menu icon that's hidden by default on desktop/tablet but shown on mobile-->
+            <!-- wraps around with just as much space needed, displays inline -->
+            <span class="mobile-menu" onclick="toggleMenu()">
+                <span class="material-icons">menu</span>
+            </span>
+            <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#">about</a></li>
+                <li><a href="../Projects/index.html">projects</a></li>
+                <li><a href="../Art/index.html">art</a></li>
+            </ul>
+    
+            </nav>
+
+      </header>
+
+      <!-- <div class="intro">
+
+        
+        <article>
+            
+
+            
+            <h1>Hola, Soy Leen</h1>
+            <p>
+                ¡Bienvenidos a mi dossier de español! Esto es un resumen de mi viaje 
+                con el idioma español, es una parte importante de quien soy. Aunque quizás no sea muy 
+                hábil todavía, disfruto mucho aprendiendo nuevos idiomas.
+                
+            </p>
+
+        </article>
+
+        <aside>
+            <img src="../img/madrid.jpg" alt="this is me!">
+            <a href="#" class="resume">Download Resume</a>
+            <a href="../Resume_Oct23.pdf" class="resume" target="_blank" download="LeenKharoufResume">Download Resume</a>
+        </aside>
+
+
+    </div> -->
+   
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="../img/madrid.jpg" alt="" uk-cover>
+            <canvas width="600" height="400"></canvas>
+        </div>
+        <div>
+            <div class="uk-card-body">
+                <h2>Language Dossier</h2>
+                <h1 class="uk-card-title">Welcome to my Language Dossier!</h1>
+                <p> 
+    
+                    This is a summary of my journey with the Spanish language - it's a big part of who I am.
+                    I may not be able to keep up with Spanish speakers yet, but I love learning new languages
+                    and I hope this inspires you to take one up too.
+                    <br><br>
+                    Enjoy,<br>
+                    Leen
+                    
+                    <h4><a class="uk-link-heading" href="index.html">(Go back to the Spanish version)</a></h4>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+
+    <!-- cool PROJECTS TITLE -->
+        <!-- <section class="wrapper">
+            <div class="top">Projects</div>
+            <div class="bottom" aria-hidden="true">Projects</div>
+          </section> -->
+
+
+    <!-- <h2>Pinned Projects</h2> -->
+
+        <div class="uk-child-width-1-3@m" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="../img/arte.jpeg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">ARTE CALLEJERO</h3>
+                        <p>Watch my oral presentation on Street Art!</p>
+                        <div uk-lightbox>
+                            <a href="presentation spanish.mp4" data-caption="Oral Presentation">CLICK TO WATCH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+            <div>
+                <div class="uk-card uk-card-default" >
+                    <div class="uk-card-media-top">
+                        <img src="../img/passport.jpg" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">PASAPORTE DE IDIOMAS</h3>
+                        <p>Check out my updated language passport</p>
+                        <div uk-lightbox>
+                            <a href="NYUAD Language Passport .pdf" target="_blank" data-caption="Passport">OPEN PASSPORT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img src="../img/parallax.png" width="1800" height="1200" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">REFLEXIÓN FINAL</h3>
+                        <p>Read about my journey with the Spanish language</p>
+                        <div uk-lightbox>
+                            <a href="Reflexión Final.pdf" target="_blank" data-caption="REFLEXIÓN">READ HERE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        
+        </div>
+        
+        <br><br>
+
+    </div>
+
+</main>
+<footer>
+
+    <p>© Leen Kharouf</p>
+    <br>
+    <p>Get in touch:</p>
+    
+    <p>leenkharouf@nyu.edu</p>
+    <img src="../img/giphy.gif" class="eyes"/>
+
+</footer>
+
+</body>
+  </html>
